@@ -1,0 +1,26 @@
+# --- Configurações de Interface ---
+
+# Inicializa o Starship (Motor do design das pílulas)
+eval "$(starship init zsh)"
+
+# Limpa a tela e executa o Fastfetch APENAS UMA VEZ ao abrir
+clear
+fastfetch
+
+# --- Histórico e Comportamento ---
+HISTSIZE=10000
+SAVEHIST=10000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+
+# --- Atalhos (Aliases) ---
+# Atalhos para facilitar sua vida nos estudos
+alias c='clear'
+alias v='code'
+alias ..='cd ..'
+alias gs='git status'
+
+# --- Plugins e Temas (Oh My Zsh se você usar) ---
+# Se você tiver o Oh My Zsh instalado, mantenha a linha abaixo, 
+# caso contrário, pode ignorar.
+# export ZSH="$HOME/.oh-my-zsh"

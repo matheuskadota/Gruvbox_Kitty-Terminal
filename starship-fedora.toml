@@ -1,0 +1,66 @@
+# Gruvbox Rainbow Style - Laptop Edition
+# Design: Pílulas conectadas (Powerline) sem horário
+
+format = """
+[](fg:#ebdbb2)\
+$os\
+[](fg:#ebdbb2 bg:#fe8019)\
+$directory\
+[](fg:#fe8019 bg:#fabd2f)\
+$git_branch\
+$git_status\
+[](fg:#fabd2f bg:#8ec07c)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:#8ec07c bg:#458588)\
+$docker_context\
+[](fg:#458588)\
+$line_break\
+$character"""
+
+[os]
+disabled = false
+style = "bg:#ebdbb2 fg:#282828"
+
+[os.symbols]
+Fedora = " "
+# Caso ele insista na cartola, o ícone acima () é o oficial do Fedora nas Nerd Fonts.
+
+[directory]
+style = "bg:#fe8019 fg:#282828"
+format = "[ $path ]($style)"
+truncation_length = 3
+fish_style_pwd_dir_length = 1
+
+[git_branch]
+symbol = ""
+style = "bg:#fabd2f fg:#282828"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#fabd2f fg:#282828"
+format = "[[($all_status$ahead_behind)]($style)]($style)"
+
+[haskell]
+symbol = ""
+style = "bg:#8ec07c fg:#282828"
+format = "[ $symbol $version ]($style)"
+
+[python]
+symbol = ""
+style = "bg:#8ec07c fg:#282828"
+format = "[ $symbol $version ]($style)"
+
+[character]
+success_symbol = "[󰄾](bold fg:#fabd2f)"
+error_symbol = "[󰄾](bold fg:#fb4934)"
+
+[line_break]
+disabled = false
