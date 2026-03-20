@@ -2,7 +2,13 @@
 
 > Setup completo do terminal **Kitty** com tema **Gruvbox** no **Fedora Linux (Laptop)**.
 
-![Preview do Terminal](IMG/preview.png)
+<p align="center">
+  <img src="IMG/Fastfetch.png" alt="Fastfetch Preview" width="600"/>
+</p>
+
+<p align="center">
+  <img src="IMG/Kitty.png" alt="Kitty Diagram" width="600"/>
+</p>
 
 ---
 
@@ -31,7 +37,8 @@
 ├── fastfetch/
 │   └── fastfetch-fedora.jsonc # Configuração do Fastfetch
 └── IMG/
-    └── preview.png             # Screenshot do terminal (em breve)
+    ├── Fastfetch.png           # Screenshot do terminal com Fastfetch
+    └── Kitty.png               # Diagrama da arquitetura do setup
 ```
 
 ---
